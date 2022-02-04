@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+}
+::-webkit-scrollbar-track{
+    background: #070611;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 20px;
+}
+body{
+    background: url(../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.Header--navbar{
+    padding: 1.5rem 0;
+   
+}
+.main--nav--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main--nav--container svg{
+    margin: 0 0 0 3rem;
+}
+
+.main--nav--container .main--navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+.main--nav--container .nav--bar::after{
+    content: '';
+    height: 1px;
+    width: 35rem;
+    background: #fff;
+    position: absolute;
+    right: 37rem;
+    top: 40px;
+ 
+}
+.main--nav--container .nav--bar{
+    width: 40rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    z-index: 1;
+    padding: 2rem;
+}
+.main--nav--container .hamburger{
+    display: none;
+}
+.main--nav--container .nav--bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main--nav--container .nav--bar ul li{
+    margin: 0 1.5rem;
+}
+.main--nav--container .nav--bar ul li a{
+    color: #fff;
+    font-weight: lighter;
+}
+.main--nav--container .nav--bar ul li .active{
+    border-bottom: 2px solid white;
+    padding: 2rem 0;
+}
+.main--nav--container .nav--bar ul li a:hover{
+    border-bottom: 2px solid white;
+    padding: 2rem 0;
+}
+.main--home--section{
+    color: papayawhip;
+    display: flex;
+    margin: 5rem 2rem 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.main--home--section .text--part{
+    margin: 3rem 3rem;
+    padding: 1rem;
+  width: 35rem;
+}
+.main--home--section .text--part p{
+    margin: 1rem 0;
+    font-weight: 300;
+    color: papayawhip;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    word-break: 5px;
+    word-wrap: break-word;
+}
+.main--home--section .text--part h1{
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 2rem 0;
+}
+.main--home--section  .circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: 3rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+   
+}
+
+
+
+
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 55%;
+    }
+    body{
+        background: url(../assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Header--navbar{
+        padding: 2rem;
+    }
+    .main--nav--container .hamburger{
+        display: block;
+    }
+    .main--nav--container .main--navbar{
+        display: none;
+    }
+    .main--home--section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .main--home--section .text--part{
+        width: 100%;
+        text-align: center;
+    }
+    .main--home--section .text--part p{
+        font-size: 1.8rem;
+        opacity: 0.6;
+    }
+    .main--home--section .text--part h1{
+        font-size: 8rem;
+        margin: 4rem 0;
+    }
+    .main--home--section .circle{
+        margin: 3rem 1rem;
+
+    }
+    .main--home--section .circle p{
+        display: block;
+        margin:  3rem auto;
+    }
+
+}
